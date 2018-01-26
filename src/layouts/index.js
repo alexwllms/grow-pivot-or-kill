@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
-// import './index.css';
+import Footer from '../components/Footer/index';
+import Button from '../components/Button/index';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -15,8 +16,12 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <div style={{ textAlign: 'center' }}>
+      <Button>Example Button</Button>
+    </div>
     <div
       style={{
+        flexGrow: 1,
         margin: '0 auto',
         maxWidth: 700,
         padding: '0px 1.0875rem 1.45rem',
@@ -24,6 +29,7 @@ const TemplateWrapper = ({ children }) => (
       }}>
       {children()}
     </div>
+    <Footer />
   </div>
 );
 
