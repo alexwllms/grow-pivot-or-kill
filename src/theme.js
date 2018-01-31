@@ -2,8 +2,11 @@ const theme = {
   colors: {
     primary: 'blue',
     secondary: 'red',
+    blue: '#F4F9FF',
+    yellow: '#FBF6EF',
     text: '#343434',
     lightGray: ' #fbfbfb',
+    white: '#FFF',
   },
   fontSizes: {
     extraSmall: '.75rem', // 12px
@@ -11,10 +14,10 @@ const theme = {
     normal: '1rem', // 16px
     medium: '1.125rem',
     large: '1.5rem', // 24px
-    extraLarge: '2rem', // 32px
+    extraLarge: '2.25rem', // 32px
   },
   lineHeight: '1.6',
-  articleWidth: '43.75rem',
+  globalMargin: '1.25rem', // 20px
 };
 
 export default theme;

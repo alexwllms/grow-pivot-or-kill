@@ -12,9 +12,7 @@ const StickyContainer = styled.div`
 const StickyBody = styled.div`
   flex-grow: 1;
   margin: 0 auto;
-  max-width: ${props => props.theme.articleWidth};
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  width: 100%;
 `;
 
 export { StickyContainer, StickyBody };

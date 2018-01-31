@@ -5,12 +5,10 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import theme from '../theme.js';
 import Header from '../components/Header';
-import Hero from '../components/Hero/index';
 import Footer from '../components/Footer/index';
 import Button from '../components/Button/index';
 import { MessageBar } from '../components/MessageBar/index';
 import { InternalLink } from '../components/Link/index';
-import { HeadingMain } from '../components/Headings/index';
 import {
   StickyContainer,
   StickyBody,
@@ -30,19 +28,11 @@ const TemplateWrapper = ({ children }) => (
       <MessageBar />
       <Header />
 
-      <Hero>
-        <HeadingMain>
-          Evening ladies and gents! Welcome to my musings on building and
-          managing better products.
-        </HeadingMain>
-        <InternalLink to="/">Read on good sir/madam</InternalLink>
-      </Hero>
-
       <StickyBody>{children()}</StickyBody>
 
-      <div style={{ textAlign: 'center' }}>
+      {/* <div style={{ textAlign: 'center' }}>
         <Button>Example Button</Button>
-      </div>
+      </div> */}
       <Footer />
     </StickyContainer>
   </ThemeProvider>
