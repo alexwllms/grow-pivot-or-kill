@@ -14,6 +14,7 @@ import {
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
+  console.log(posts);
   return (
     <main>
       <Hero>
@@ -21,7 +22,9 @@ export default function Index({ data }) {
           Evening ladies and gents! Welcome to my musings on building and
           managing better products.
         </HeadingMain>
-        <InternalLink to="/">Read on good sir/madam</InternalLink>
+        <InternalLink to={posts[0].node.frontmatter.path}>
+          Read on good sir/madam
+        </InternalLink>
       </Hero>
 
       <div className="blog-posts">
@@ -44,6 +47,7 @@ export default function Index({ data }) {
                 </BlogPostPreviewContent>
 
                 <BlogPostPreviewImg
+                  to={post.frontmatter.path}
                   style={{
                     backgroundImage: `url('${
                       post.frontmatter.featuredImage.childImageSharp.sizes.src

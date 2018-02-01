@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import theme from '../../theme';
+import Link from 'gatsby-link';
 
 const BlogPostPreview = styled.article`
   background-color: ${props => props.theme.colors.blue};
@@ -40,7 +41,7 @@ const BlogPostPreviewHeading = styled.h2`
   }
 `;
 
-const BlogPostPreviewImg = styled.div`
+const BlogPostPreviewImg = styled(Link)`
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

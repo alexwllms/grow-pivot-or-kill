@@ -2,7 +2,7 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '16px',
-  baseLineHeight: '1.4',
+  baseLineHeight: '1.6',
   scaleRatio: 2,
   headerFontFamily: ['Lora', 'Helvetica', 'Arial', 'serif'],
   headerWeight: 400,
