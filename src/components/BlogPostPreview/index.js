@@ -26,7 +26,6 @@ const BlogPostPreview = styled.article`
   @media screen and (min-width: 48rem) {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
 `;
 
@@ -46,12 +45,12 @@ const BlogPostPreviewImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: ${props => props.theme.globalMargin};
-  height: 15rem;
+  min-height: 15rem;
   margin-bottom: 0;
 
   @media screen and (min-width: 48rem) {
     min-width: 40%;
-    height: 30rem;
+    min-height: 30rem;
   }
 `;
 

@@ -13,6 +13,7 @@ import {
 } from '../components/BlogPostPreview/index';
 
 export default function Index({ data }) {
+  console.log(data);
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <main>
@@ -45,10 +46,10 @@ export default function Index({ data }) {
 
                 <BlogPostPreviewImg
                   style={{
-                    backgroundImage:
-                      "url('https://images.unsplash.com/photo-1489269637500-aa0e75768394?ixlib=rb-0.3.5&s=60778ff3c1536b6401434252284e1427&auto=format&fit=crop&w=2525&q=80')",
+                    backgroundImage: `url('${
+                      post.frontmatter.featuredImage.childImageSharp.sizes.src
+                    }')`,
                   }}
-                  alt=""
                 />
               </BlogPostPreview>
             );
@@ -69,15 +70,14 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            featuredImage {
+              childImageSharp {
+                sizes {
+                  src
+                }
+              }
+            }
           }
-        }
-      }
-    }
-
-    allFile(filter: { extension: { eq: "jpg" } }) {
-      edges {
-        node {
-          publicURL
         }
       }
     }

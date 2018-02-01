@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
     <StickyContainer>
       <Helmet
-        title="Gatsby Default Starter"
+        title="Grow, Pivot or Kill"
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },
