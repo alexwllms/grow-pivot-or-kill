@@ -30,9 +30,6 @@ const TemplateWrapper = ({ children }) => (
 
       <StickyBody>{children()}</StickyBody>
 
-      {/* <div style={{ textAlign: 'center' }}>
-        <Button>Example Button</Button>
-      </div> */}
       <Footer />
     </StickyContainer>
   </ThemeProvider>
