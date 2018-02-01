@@ -13,7 +13,6 @@ import {
 } from '../components/BlogPostPreview/index';
 
 export default function Index({ data }) {
-  console.log(data);
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <main>
