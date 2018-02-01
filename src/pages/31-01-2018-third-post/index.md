@@ -5,16 +5,9 @@ title: "Building a Culture of Experimentation"
 featuredImage: "./featured-image.jpg"
 ---
 
-![Featured Image](./featured-image.jpg)
-
 A retrospective is essential for helping your team learn and improve as your product evolves. It is also a great opportunity to celebrate recent successes, and is indispensable in helping you identify frustrations within your team, resources they may be lacking, and blockers to your team’s progress.
 
-## Key takeaways
-
-* Set the context and the tone of the retrospective;
-* Write down your successes, what your learned and your frustrations on a whiteboard;
-* Group these ideas by topic and assign actions to team members;
-* Don’t forget to follow-up with what’s been fixed the following week.
+![Featured Image](./featured-image.jpg)
 
 To run an effective retrospective you should: set the context and the tone, discuss ideas with every member of your team, group these ideas, and make a plan of how to follow-up.
 
@@ -30,9 +23,7 @@ With an end-of-project retrospective the team should talk about the general tren
 Set the tone (aka Following ‘the Prime Directive’)
 Having identified the context for the retrospective, don’t forget to set the tone. While celebrating your successes and sharing what you have learned, often retrospectives are an opportunity for team members to express their frustrations. This can be with a process that’s failing them, or a person that is hindering the sprint. For a team member to feel secure in expressing their frustrations you need to set the tone of the conversation. The tone you want to strike is best described by Norm Kerth and is referred to as ‘the Prime Directive’:
 
-“Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand.”
-
--_Norm Kerth, Project Retrospectives: A Handbook for Team Review_
+>“Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand.” Norm Kerth – Project Retrospectives: A Handbook for Team Review
 
 This catch-all sets the tone for the retrospective. Everyone is free to express their frustrations as long as they are based on this premise. From this position your team can have a frank discussion about the last sprint.
 
