@@ -2,7 +2,10 @@
 path: "/second-post"
 date: "2018-01-30"
 title: "Understanding how good user testing sessions benefit your product"
+featuredImage: "./featured-image.jpg"
 ---
+
+![Featured Image](./featured-image.jpg)
 
 A retrospective is essential for helping your team learn and improve as your product evolves. It is also a great opportunity to celebrate recent successes, and is indispensable in helping you identify frustrations within your team, resources they may be lacking, and blockers to your team’s progress.
 

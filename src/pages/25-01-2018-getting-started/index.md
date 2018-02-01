@@ -2,9 +2,10 @@
 path: "/how-to-run-an-effective-retrospective"
 date: "2018-01-25"
 title: "How to Run an Effective Retrospective"
-attachments:
-- "./article-one-image.jpg"
+featuredImage: "./featured-image.jpg"
 ---
+
+![Featured Image](./featured-image.jpg)
 
 A retrospective is essential for helping your team learn and improve as your product evolves. It is also a great opportunity to celebrate recent successes, and is indispensable in helping you identify frustrations within your team, resources they may be lacking, and blockers to your team’s progress.
 
