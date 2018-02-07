@@ -6,13 +6,22 @@ import { remCalc } from '../../utils/units';
 const Title = styled.h1`
   font-size: ${props => props.theme.fontSizes.extraLarge};
   line-height: 1.45;
-  margin-bottom: 2.8rem;
+  margin-bottom: ${remCalc(44.8)};
   max-width: 57.5rem;
   text-align: center;
 
   @media screen and (min-width: 48em) {
     font-size: ${props => props.theme.fontSizes.extraExtraLarge};
   }
+`;
+
+const SubTitle = styled.p`
+  font-size: ${props => props.theme.fontSizes.medium};
+  line-height: 1.45;
+  margin-top: -1.4rem;
+  margin-bottom: 0;
+  max-width: 57.5rem;
+  text-align: center;
 `;
 
 const HeadingMain = styled.h2`
@@ -23,13 +32,11 @@ const HeadingMain = styled.h2`
   font-weight: bold;
 `;
 
-const SubHeading = styled.p`
-  font-size: ${props => props.theme.fontSizes.medium};
+const HeadingTwo = styled.h2`
+  font-size: ${props => props.theme.fontSizes.large};
   line-height: 1.45;
-  margin-top: -1.4rem;
-  margin-bottom: 0;
-  max-width: 57.5rem;
-  text-align: center;
+  margin-bottom: ${props => props.theme.globalMargin};
+  font-weight: bold;
 `;
 
-export { Title, HeadingMain, SubHeading };
+export { Title, HeadingMain, HeadingTwo, SubTitle };

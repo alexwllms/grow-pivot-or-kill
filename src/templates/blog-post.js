@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 import Hero from '../components/Hero/index';
 import Article from '../components/Article/index';
-import { Title, SubHeading } from '../components/Headings/index';
+import { Title, SubTitle } from '../components/Headings/index';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query we'll write in a bit
@@ -16,7 +16,7 @@ export default function Template({
       <div className="blog-post">
         <Hero>
           <Title>{post.frontmatter.title}</Title>
-          <SubHeading>{post.frontmatter.date}</SubHeading>
+          <SubTitle>{post.frontmatter.date}</SubTitle>
         </Hero>
 
         <Article
