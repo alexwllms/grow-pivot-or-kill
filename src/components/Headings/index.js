@@ -33,7 +33,7 @@ const HeadingMain = styled.h2`
 `;
 
 const HeadingTwo = styled.h2`
-  font-size: ${props => props.theme.fontSizes.large};
+  font-size: ${props => props.theme.fontSizes.extraLarge};
   line-height: 1.45;
   margin-bottom: ${props => props.theme.globalMargin};
   font-weight: bold;

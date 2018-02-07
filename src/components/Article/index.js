@@ -2,10 +2,13 @@ import styled from 'styled-components';
 
 const Article = styled.article`
   max-width: 600px;
-  margin: 0 20px 100px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
 
   @media screen and (min-width: 48em) {
-    margin: 0 auto 100px auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .gatsby-resp-image-wrapper {

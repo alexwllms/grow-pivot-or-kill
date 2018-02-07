@@ -3,7 +3,14 @@ import Img from 'gatsby-image';
 
 import Hero from '../../components/Hero/index';
 import Article from '../../components/Article/index';
+import Container from '../../components/Container/index';
+import {
+  ImageFeed,
+  ImageFeedHeader,
+  ImageFeedContainer,
+} from '../../components/ImageFeed/index';
 import { Title, HeadingTwo, SubTitle } from '../../components/Headings/index';
+import { ExternalLink } from '../../components/Links/index';
 
 import aboutHeaderImage from './about-header-image.jpg';
 
@@ -73,8 +80,43 @@ const AboutPage = () => (
         set the context and the tone, discuss ideas with every member of your
         team, group these ideas, and make a plan of how to follow-up.
       </p>
+    </Article>
 
-      <HeadingTwo>&lsquo;grams</HeadingTwo>
+    <ImageFeedContainer>
+      <ImageFeedHeader>
+        <HeadingTwo>&lsquo;grams</HeadingTwo>
+      </ImageFeedHeader>
+
+      <ImageFeed>
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+        <img src={aboutHeaderImage} alt="" width="300" height="300" />
+      </ImageFeed>
+    </ImageFeedContainer>
+
+    <Article>
+      <p>
+        Group these ideas by topic and assign actions to team members; Don’t
+        forget to follow-up with what’s been fixed the following week. To run an
+        effective retrospective you should: set the context and the tone,
+        discuss ideas with every member of your team, group these ideas, and
+        make a plan of how to follow-up.
+      </p>
+    </Article>
+
+    <Article>
+      <HeadingTwo>Say Hello</HeadingTwo>
+      <p>
+        Group these ideas by topic and assign actions to team members; Don’t
+        forget to follow-up with what’s been fixed the following week.
+      </p>
+      <p>
+        Email me on{' '}
+        <ExternalLink href="/">alex@growpivotorkill.com</ExternalLink>
+      </p>
     </Article>
   </div>
 );
