@@ -6,9 +6,10 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from '../theme.js';
 import Header from '../components/Header';
 import Footer from '../components/Footer/index';
-import Button from '../components/Button/index';
+import NewsletterSignup from '../components/NewsletterSignup/index';
+import Button from '../components/Buttons/index';
 import { MessageBar } from '../components/MessageBar/index';
-import { InternalLink } from '../components/Link/index';
+import { InternalLink } from '../components/Links/index';
 import {
   StickyContainer,
   StickyBody,
@@ -27,9 +28,8 @@ const TemplateWrapper = ({ children }) => (
 
       <MessageBar />
       <Header />
-
       <StickyBody>{children()}</StickyBody>
-
+      <NewsletterSignup />
       <Footer />
     </StickyContainer>
   </ThemeProvider>

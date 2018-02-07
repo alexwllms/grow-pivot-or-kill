@@ -1,30 +1,34 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+import { remCalc } from '../../utils/units';
+import Container from '../Container/index';
+import { InternalLink } from '../Links/index';
 
 const Header = () => (
-  <div
-    style={{
-      background: '#FFF',
-      marginBottom: '1.45rem',
-    }}>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 1200,
-        padding: '2.5rem 1.0875rem 1.45rem 1.0875rem',
-      }}>
-      <h1 style={{ fontSize: '1.125rem', margin: 0, textAlign: 'center' }}>
-        <Link
-          to="/"
-          style={{
-            color: '#363636',
-            textDecoration: 'none',
-          }}>
-          Grow, Pivot or Kill
-        </Link>
-      </h1>
-    </div>
-  </div>
+  <HeaderInner>
+    <Container>
+      <PageTitle>
+        <InternalLink to="/">Grow, Pivot or Kill</InternalLink>
+      </PageTitle>
+    </Container>
+  </HeaderInner>
 );
+
+const HeaderInner = styled.div`
+  background-color: ${props => props.theme.colors.white};
+  margin-bottom: ${remCalc(24)};
+  padding: ${remCalc(40)} ${remCalc(18)} ${remCalc(24)} ${remCalc(18)};
+`;
+
+const PageTitle = styled.h1`
+  font-size: ${props => props.theme.fontSizes.medium};
+  margin: 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+`;
 
 export default Header;

@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeadingMain = styled.h2`
+import { remCalc } from '../../utils/units';
+
+const Title = styled.h1`
   font-size: ${props => props.theme.fontSizes.extraLarge};
   line-height: 1.45;
   margin-bottom: 2.8rem;
@@ -13,6 +15,14 @@ const HeadingMain = styled.h2`
   }
 `;
 
+const HeadingMain = styled.h2`
+  font-size: ${props => props.theme.fontSizes.extraLarge};
+  line-height: 1.45;
+  margin-bottom: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+`;
+
 const SubHeading = styled.p`
   font-size: ${props => props.theme.fontSizes.medium};
   line-height: 1.45;
@@ -22,4 +32,4 @@ const SubHeading = styled.p`
   text-align: center;
 `;
 
-export { HeadingMain, SubHeading };
+export { Title, HeadingMain, SubHeading };

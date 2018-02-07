@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import Hero from '../components/Hero/index';
-import { HeadingMain } from '../components/Headings/index';
-import { InternalLink } from '../components/Link/index';
+import { Title } from '../components/Headings/index';
+import { InternalLink } from '../components/Links/index';
 import {
   BlogPostPreview,
   BlogPostPreviewHeading,
@@ -14,14 +14,13 @@ import {
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
-  console.log(posts);
   return (
     <main>
       <Hero>
-        <HeadingMain>
+        <Title>
           Evening ladies and gents! Welcome to my musings on building and
           managing better products.
-        </HeadingMain>
+        </Title>
         <InternalLink to={posts[0].node.frontmatter.path}>
           Read on good sir/madam
         </InternalLink>

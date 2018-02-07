@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { InternalLink } from '../Link/index';
+import { InternalLink } from '../Links/index';
 import theme from '../../theme';
 
 class MessageBar extends React.Component {

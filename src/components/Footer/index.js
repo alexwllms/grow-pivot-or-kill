@@ -1,32 +1,39 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import styled from 'styled-components';
 
-import { ExternalLink, InternalLink } from '../Link/index';
+import { ExternalLink, InternalLink } from '../Links/index';
+import { remCalc } from '../../utils/units';
 
 const Footer = () => (
-  <div
-    style={{
-      background: '#FBFBFB',
-      minHeight: '239px',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-    }}>
-    <h2
-      style={{
-        fontSize: '1.125rem',
-        textAlign: 'center',
-        marginBottom: '1.25rem',
-      }}>
-      Grow, Pivot or Kill
-    </h2>
-    <p style={{ fontSize: '0.75rem', textAlign: 'center', marginBottom: 0 }}>
+  <FooterInner>
+    <FooterTitle>Grow, Pivot or Kill</FooterTitle>
+
+    <FooterText>
       Designed and built by{' '}
       <InternalLink to="/about/">Alex Williams</InternalLink>, using{' '}
-      <ExternalLink href="https://www.gatsbyjs.org">Gatsby</ExternalLink>
-    </p>
-  </div>
+      <ExternalLink href="https://www.gatsbyjs.org">Gatsby</ExternalLink>.
+    </FooterText>
+  </FooterInner>
 );
+
+const FooterInner = styled.div`
+  background: ${props => props.theme.colors.lightGray};
+  min-height: ${remCalc(240)};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const FooterTitle = styled.h2`
+  font-size: ${props => props.theme.fontSizes.medium};
+  margin: ${remCalc(24)};
+  text-align: center;
+`;
+
+const FooterText = styled.p`
+  font-size: ${props => props.theme.fontSizes.extraSmall};
+  margin-bottom: 0;
+`;
 
 export default Footer;
